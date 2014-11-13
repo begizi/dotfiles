@@ -1,0 +1,48 @@
+# This is the default .slate file.
+# If no ~/.slate file exists this is the file that will be used.
+
+config defaultToCurrentScreen true
+config nudgePercentOf screenSize
+config resizePercentOf screenSize
+
+# Abstract Positions
+alias full move screenOriginX;screenOriginY screenSizeX;screenSizeY
+alias lefthalf move screenOriginX;screenOriginY screenSizeX/2;screenSizeY
+alias righthalf move screenOriginX+screenSizeX/2;screenOriginY screenSizeX/2;screenSizeY
+alias topleft corner top-left resize:screenSizeX/2;screenSizeY/2
+alias topleft corner top-right resize:screenSizeX/2;screenSizeY/2
+
+# Resize Bindings
+bind right:alt;shift       resize +10% +0
+bind left:alt;shift        resize -10% +0
+bind up:alt;shift          resize +0   -10%
+bind down:alt;shift        resize +0   +10%
+
+# Nudge Bindings
+bind right:shift;ctrl nudge +10% +0
+bind left:shift;ctrl  nudge -10% +0
+bind up:shift;ctrl    nudge +0   -10%
+bind down:shift;ctrl  nudge +0   +10%
+
+# Throw Bindings
+bind right:ctrl;alt;cmd throw right resize
+bind left:ctrl;alt;cmd  throw left  resize
+bind up:ctrl;alt;cmd    throw up    resize
+bind down:ctrl;alt;cmd  throw down  resize
+
+# Focus Bindings
+ bind right:cmd;ctrl    focus right
+ bind left:cmd;ctrl     focus left
+
+# Window Hints
+bind j:cmd;shift hint
+
+# Window Grid
+bind d:cmd;shift grid padding:5 0:8,8 1:8,8
+bind 1:alt ${full}
+bind 2:alt ${lefthalf}
+bind 3:alt ${righthalf}
+bind tab:cmd switch
+
+# Application Shortcuts
+bind e:cmd;shift show 'Mailbox (Beta)'

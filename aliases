@@ -1,0 +1,17 @@
+# Unix
+alias tlf="tail -f"
+alias ln='ln -v'
+alias mkdir='mkdir -p'
+alias ...='../..'
+alias l='ls'
+alias ll='ls -al'
+alias lh='ls -Alh'
+alias e="$EDITOR"
+alias v="$VISUAL"
+
+# git
+alias g='git'
+alias gs='git status -sb'
+
+# Include custom aliases
+[[ -f ~/.aliases.local ]] && source ~/.aliases.local
