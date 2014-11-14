@@ -22,5 +22,4 @@ bind branch R !?git rebase %(branch)
 bind stash p !@git stash pop
 bind stash c !git stash pop %(stash)
 
-bind tree V !subl %(file)
-
+set vertical-split = false

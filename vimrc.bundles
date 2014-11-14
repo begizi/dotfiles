@@ -17,11 +17,21 @@ Bundle 'vim-scripts/tComment'
 Bundle 'scrooloose/nerdtree'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle "dkprice/vim-easygrep"
-Bundle "altercation/vim-colors-solarized"
 Bundle 'christoomey/vim-tmux-navigator'
 Bundle 'jgdavey/tslime.vim'
 Bundle 'henrik/vim-qargs'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'flazz/vim-colorschemes'
+Bundle 'fatih/vim-go'
+Bundle 'wavded/vim-stylus'
+Bundle 'kien/ctrlp.vim'
+Bundle 'majutsushi/tagbar'
+Bundle 'lukaszkorecki/CoffeeTags'
+Bundle 'rking/ag.vim'
+Bundle 'marijnh/tern_for_vim'
+Bundle 'elzr/vim-json'
+Bundle 'scrooloose/syntastic'
+Bundle 'godlygeek/tabular'
+Bundle 'plasticboy/vim-markdown'
 
 filetype on
