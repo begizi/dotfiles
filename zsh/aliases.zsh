@@ -6,12 +6,16 @@ alias ...='../..'
 alias l='ls'
 alias ll='ls -al'
 alias lh='ls -Alh'
-alias e="$EDITOR"
-alias v="$VISUAL"
+alias up='cd ..'
+alias desk='cd ~/Desktop'
+alias c='clear'
 
 # git
 alias g='git'
 alias gs='git status -sb'
+
+# vim
+alias v='vim .'
 
 # Include custom aliases
 [[ -f ~/.aliases.local ]] && source ~/.aliases.local

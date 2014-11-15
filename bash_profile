@@ -1,5 +1,5 @@
 
-export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/mysql/bin
+export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/mysql/bin
 export PATH=/Users/begizi/bin/:$PATH
 export PATH=/usr/local/Cellar/go/bin/:$PATH
 export RABBITMQ_HOME=/usr/local/Cellar/rabbitmq/2.7.1
@@ -14,3 +14,4 @@ export GOPATH=/usr/local/Cellar/go
 eval "$(direnv hook bash)"
 
 source $HOME/.aliases 2> /dev/null
+
