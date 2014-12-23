@@ -23,3 +23,9 @@ bind stash p !@git stash pop
 bind stash c !git stash pop %(stash)
 
 set vertical-split = false
+
+set main-view = date:relative author:full id:no \
+                line-number:no commit-title:refs=true,graph=true
+
+set tree-view = line-number:no,interval=5 mode author:full \
+                file-size:units date:relative id:no file-name
