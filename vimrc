@@ -23,7 +23,7 @@ set autowrite     " Automatically :write before running commands
 
 " Auto run scripts
 autocmd BufWrite * mark ' | silent! %s/\s\+$// | norm ''
-autocmd BufWrite * mark ' | silent! %s/\n\{3,}/\r\r\r/e | norm''
+autocmd BufWrite * let w:winview = winsaveview() | %s/\n\{3,}/\r\r\r/e | if exists('w:winview') | call winrestview(w:winview) | endif
 
 " Toggle nerdtree with F10
 map <leader>d :NERDTreeToggle<CR>
