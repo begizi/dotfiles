@@ -17,5 +17,9 @@ alias gs='git status -sb'
 # vim
 alias v='vim .'
 
+# tmux
+alias mux='tmuxinator'
+alias mu='tmuxinator start'
+
 # Include custom aliases
 [[ -f ~/.aliases.local ]] && source ~/.aliases.local

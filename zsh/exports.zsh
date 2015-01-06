@@ -18,5 +18,9 @@ export PYTHONPATH=/usr/local/lib/python2.7/site-packages:/usr/local/lib/python:$
 # GOPATH
 export GOPATH=/usr/local/Cellar/go
 
+# RBENV
+RBENV_ROOT=/usr/local/var/rbenv
+eval "$(rbenv init -)"
+
 # direnv hook for auto env setup
 eval "$(direnv hook zsh)"
