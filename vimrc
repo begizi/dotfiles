@@ -23,7 +23,7 @@ set autowrite     " Automatically :write before running commands
 
 " Auto run scripts
 autocmd BufWrite * mark ' | silent! %s/\s\+$// | norm ''
-autocmd BufWrite * %s/\n\{3,}/\r\r\r/e
+autocmd BufWrite * mark ' | silent! %s/\n\{3,}/\r\r\r/e | norm''
 
 " Toggle nerdtree with F10
 map <leader>d :NERDTreeToggle<CR>
@@ -40,6 +40,8 @@ map <leader>f :TagbarToggle<CR>
 " Settings for tagbar
 let g:tagbar_autofocus = 1
 
+" Vim Json
+let g:vim_json_syntax_conceal = 0
 " Allow modification in nerdtree
 set modifiable
 
