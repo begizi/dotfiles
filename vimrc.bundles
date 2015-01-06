@@ -34,5 +34,6 @@ Bundle 'scrooloose/syntastic'
 Bundle 'godlygeek/tabular'
 Bundle 'plasticboy/vim-markdown'
 Bundle 'digitaltoad/vim-jade'
+Bundle 'jlanzarotta/bufexplorer'
 
 filetype on

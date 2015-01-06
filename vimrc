@@ -33,6 +33,11 @@ let NERDTreeQuitOnOpen = 1
 let NERDTreeDirArrows = 1
 let g:NERDTreeWinSize = 45
 
+" Force reload file
+map <leader>e :e!<CR>
+
+" Toggle Buffer
+map <leader>s :BufExplorer<CR>
 
 " Toggle tagbar
 map <leader>f :TagbarToggle<CR>
@@ -42,6 +47,7 @@ let g:tagbar_autofocus = 1
 
 " Vim Json
 let g:vim_json_syntax_conceal = 0
+
 " Allow modification in nerdtree
 set modifiable
 
