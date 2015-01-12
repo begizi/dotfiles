@@ -20,6 +20,7 @@ set incsearch     " do incremental searching
 set hlsearch      " highlight matches
 set laststatus=2  " Always display the status line
 set autowrite     " Automatically :write before running commands
+set nowrap
 
 " Auto run scripts
 autocmd BufWrite * mark ' | silent! %s/\s\+$// | norm ''
@@ -38,6 +39,20 @@ map <leader>e :e!<CR>
 
 " Toggle Buffer
 map <leader>s :BufExplorer<CR>
+
+" JSON Format
+function! JsonExpand()
+  :%!jq '.'
+endfunction
+
+function! JsonCompact()
+  :%!jq -c '.'
+endfunction
+
+command JsonExpand call JsonExpand()
+command JsonCompact call JsonCompact()
+
+map <leader>j :JsonExpand<cr>
 
 " Toggle tagbar
 map <leader>f :TagbarToggle<CR>
