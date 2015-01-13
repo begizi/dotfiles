@@ -1,7 +1,7 @@
-# ~/.tmuxinator/sextant.yml
+# ~/.tmuxinator/dropler.yml
 
-name: sextant
-root: ~/Documents/Work/MojoTech/Sextant/sextant
+name: dropler
+root: ~/Documents/Work/Dropler/go-drop/src/dropler
 
 # Optional tmux socket
 # socket_name: foo
@@ -19,12 +19,8 @@ root: ~/Documents/Work/MojoTech/Sextant/sextant
 # tmux_command: byobu
 
 windows:
-  - sextant:
-      layout: bd9b,217x85,0,0[217x8,0,0{54x8,0,0,828,53x8,55,0,833,54x8,109,0,832,53x8,164,0,834},217x8,0,9,831,217x67,0,18,830]
+  - dropler:
+      layout: 24b9,204x51,0,0[204x8,0,0,0,204x42,0,9,3]
       panes:
-        - cd data_api && make gin
-        - cd data_api && goconvey
-        - cd data_api && redis-commander
-        - cd data_api && redis-server
-        - cd client && grunt serve
-        - vim
+        - gin
+        - vim .
