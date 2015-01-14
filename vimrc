@@ -26,6 +26,9 @@ set nowrap
 autocmd BufWrite * mark ' | silent! %s/\s\+$// | norm ''
 autocmd BufWrite * let w:winview = winsaveview() | %s/\n\{3,}/\r\r\r/e | if exists('w:winview') | call winrestview(w:winview) | endif
 
+" Ag Binding
+nmap <D-S-F> :Ag!<space>
+
 " Toggle nerdtree with F10
 map <leader>d :NERDTreeToggle<CR>
 
@@ -39,6 +42,18 @@ map <leader>e :e!<CR>
 
 " Toggle Buffer
 map <leader>s :BufExplorer<CR>
+
+" Snippets
+let g:UltiSnipsExpandTrigger="<c-o>"
+let g:UltiSnipsJumpForwardTrigger="<c-j>"
+let g:UltiSnipsJumpBackwardTrigger="<c-k>"
+
+" YCM
+imap <c-k> <S-TAB>
+let g:ycm_collect_identifiers_from_tags_files = 1
+let g:ycm_seed_identifiers_with_syntax = 1
+let g:ycm_key_list_select_completion = ['<TAB>', '<Down>', '<c-j>']
+let g:ycm_key_list_previous_completion = ['<S-TAB>', '<Up>', '<c-k']
 
 " JSON Format
 function! JsonExpand()
@@ -59,6 +74,9 @@ map <leader>f :TagbarToggle<CR>
 
 " Settings for tagbar
 let g:tagbar_autofocus = 1
+
+" Vim Go
+let g:go_fmt_command = "goimports"
 
 " Vim Json
 let g:vim_json_syntax_conceal = 0
