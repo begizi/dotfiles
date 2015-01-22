@@ -18,6 +18,9 @@ export PYTHONPATH=/usr/local/lib/python2.7/site-packages:/usr/local/lib/python:$
 # GOPATH
 export GOPATH=/usr/local/Cellar/go
 
+# Android
+export PATH=/Users/begizi/Documents/SDK/adt-bundle-mac-x86_64-20140702/sdk/platform-tools:$PATH
+
 # RBENV
 RBENV_ROOT=/usr/local/var/rbenv
 eval "$(rbenv init -)"
