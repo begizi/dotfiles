@@ -13,11 +13,13 @@ bind generic ! !@?git reset HEAD^
 bind generic @ !@?git reset --hard HEAD^
 bind generic a !git commit --amend
 bind generic U !git rem
+bind generic > !hub pull-request
 
 bind branch b !@git checkout -b "bae/%(prompt Enter new branch name: bae/)" # Create and checkout a new branch
 bind branch c !@git checkout %(branch)
 bind branch <Backspace> !@?git branch -D %(branch)
 bind branch R !?git rebase %(branch)
+bind branch > !?hub pull-request -b %(branch)
 
 bind stash p !@git stash pop
 bind stash c !git stash pop %(stash)

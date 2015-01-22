@@ -27,3 +27,6 @@ eval "$(rbenv init -)"
 
 # direnv hook for auto env setup
 eval "$(direnv hook zsh)"
+
+# alias hub to git
+eval "$(hub alias -s)"
