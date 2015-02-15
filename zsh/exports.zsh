@@ -21,6 +21,9 @@ export GOPATH=/usr/local/Cellar/go
 # Android
 export PATH=/Users/begizi/Documents/SDK/adt-bundle-mac-x86_64-20140702/sdk/platform-tools:$PATH
 
+# TODO
+export TODO_DB_PATH=$HOME/Dropbox/TODO/todo.json
+
 # RBENV
 RBENV_ROOT=/usr/local/var/rbenv
 eval "$(rbenv init -)"
