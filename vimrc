@@ -54,6 +54,8 @@ let g:ycm_collect_identifiers_from_tags_files = 1
 let g:ycm_seed_identifiers_with_syntax = 1
 let g:ycm_key_list_select_completion = ['<TAB>', '<Down>', '<c-j>']
 let g:ycm_key_list_previous_completion = ['<S-TAB>', '<Up>', '<c-k']
+let g:ycm_autoclose_preview_window_after_completion = 0
+let g:ycm_autoclose_preview_window_after_insertion = 1
 
 " JSON Format
 function! JsonExpand()
@@ -77,6 +79,7 @@ let g:tagbar_autofocus = 1
 
 " Vim Go
 let g:go_fmt_command = "goimports"
+let g:go_auto_type_info = 1
 
 " Vim Json
 let g:vim_json_syntax_conceal = 0
@@ -100,8 +103,10 @@ nnoremap K :Ag "\b<C-R><C-W>\b"<CR>:cw<CR>
 
 " Syntastic settings
 let g:syntastic_enable_highlighting=1
-let g:syntastic_auto_jump=2
-let g:syntastic_check_on_open=1
+let g:syntastic_auto_jump=0
+let g:syntastic_check_on_open=0
+let g:syntastic_error_symbol = "✗"
+let g:syntastic_warning_symbol = "⚠"
 let g:syntastic_mode_map = { "mode": "active",
   \ "active_filetypes": [],
   \ "passive_filetypes": ["html"] }
