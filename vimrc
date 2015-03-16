@@ -40,8 +40,15 @@ let g:NERDTreeWinSize = 45
 " Force reload file
 map <leader>e :e!<CR>
 
+" Force redraw
+map <leader>r :redraw!<CR>
+
 " Toggle Buffer
 map <leader>s :BufExplorer<CR>
+
+" Toggle Paste Mode
+nmap <leader>o :set paste!<CR>
+
 
 " Snippets
 let g:UltiSnipsExpandTrigger="<c-o>"
