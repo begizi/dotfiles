@@ -26,8 +26,17 @@ set nowrap
 autocmd BufWrite * mark ' | silent! %s/\s\+$// | norm ''
 autocmd BufWrite * let w:winview = winsaveview() | %s/\n\{3,}/\r\r\r/e | if exists('w:winview') | call winrestview(w:winview) | endif
 
+" Save Binding
+nmap <leader>s :w<CR>
+
+" Quit Binding
+nmap <leader>q :q<CR>
+
+" Write-Quit Binding
+nmap <leader>w :wq<CR>
+
 " Ag Binding
-nmap <D-S-F> :Ag!<space>
+nmap <leader>f :Ag!<space>
 
 " Toggle nerdtree with F10
 map <leader>d :NERDTreeToggle<CR>
@@ -44,7 +53,7 @@ map <leader>e :e!<CR>
 map <leader>r :redraw!<CR>
 
 " Toggle Buffer
-map <leader>s :BufExplorer<CR>
+map <leader>a :BufExplorer<CR>
 
 " Toggle Paste Mode
 nmap <leader>o :set paste!<CR>
@@ -79,7 +88,7 @@ command JsonCompact call JsonCompact()
 map <leader>j :JsonExpand<cr>
 
 " Toggle tagbar
-map <leader>f :TagbarToggle<CR>
+map <leader>t :TagbarToggle<CR>
 
 " Settings for tagbar
 let g:tagbar_autofocus = 1
