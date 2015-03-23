@@ -219,7 +219,7 @@ endif
 map <C-n> :cn<CR>
 map <C-p> :cp<CR>
 
-map <F5> :set hls!<bar>set hls?<CR>
+nnoremap <esc> :noh<return><esc>
 
 " Disable Markdown Folding
 let g:vim_markdown_folding_disabled=1
