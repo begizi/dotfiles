@@ -4,6 +4,9 @@ export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin:/usr/lo
 # Add home bin to PATH
 export PATH=$HOME/bin/:$PATH
 
+# Editor
+export EDITOR=vim
+
 # Homebrew
 export PATH=/usr/local/Cellar/go/bin/:$PATH
 export HOMEBREW_LIBRARY_PATH=$HOMEBREW_LIBRARY_PATH:$LD_LIBRARY_PATH
