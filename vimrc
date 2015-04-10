@@ -58,6 +58,14 @@ map <leader>a :BufExplorer<CR>
 " Toggle Paste Mode
 nmap <leader>o :set paste!<CR>
 
+" Goyo
+map <leader>z :Goyo<CR>
+let g:goyo_width = 100
+let g:goyo_margin_top = 2
+let g:goyo_margin_bottom = 2
+autocmd User GoyoEnter Limelight
+autocmd User GoyoLeave Limelight!
+
 
 " Snippets
 let g:UltiSnipsExpandTrigger="<c-o>"

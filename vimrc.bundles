@@ -39,5 +39,7 @@ Bundle 'Valloric/YouCompleteMe'
 Bundle 'jiangmiao/auto-pairs'
 Bundle 'SirVer/ultisnips'
 Bundle "honza/vim-snippets"
+Bundle 'junegunn/goyo.vim'
+Bundle 'junegunn/limelight.vim'
 
 filetype on
