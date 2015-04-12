@@ -122,8 +122,8 @@ endif
 
 filetype plugin indent on
 
-" bind K to search word under cursor
-nnoremap K :Ag "\b<C-R><C-W>\b"<CR>:cw<CR>
+" bind F to search word under cursor
+nnoremap F :Ag "\b<C-R><C-W>\b"<CR>:cw<CR>
 
 " Syntastic settings
 let g:syntastic_enable_highlighting=1
@@ -172,13 +172,19 @@ set t_Co=256
 :set noantialias
 
 " Color scheme
-colorscheme Tomorrow-Night
+colorscheme apprentice
+" colorscheme bvemu
+" colorscheme Tomorrow-Night
+" colorscheme bubblegum
 set background=dark
 set encoding=utf-8
 
+" Cursorline
+set cursorline
+
 " Numbers
 set number
-set numberwidth=5
+set numberwidth=4
 
 " Snippets are activated by Shift+Tab
 let g:snippetsEmu_key = "<S-Tab>"
