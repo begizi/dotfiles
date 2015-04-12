@@ -41,5 +41,7 @@ Bundle 'SirVer/ultisnips'
 Bundle "honza/vim-snippets"
 Bundle 'junegunn/goyo.vim'
 Bundle 'junegunn/limelight.vim'
+Bundle 'tpope/vim-fugitive'
+Bundle 'edkolev/tmuxline.vim'
 
 filetype on
