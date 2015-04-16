@@ -38,6 +38,9 @@ nmap <leader>w :wq<CR>
 " Ag Binding
 nmap <leader>f :Ag!<space>
 
+" Clipboard bindings
+vmap <C-c> "+y
+
 " Toggle nerdtree with F10
 map <leader>d :NERDTreeToggle<CR>
 
