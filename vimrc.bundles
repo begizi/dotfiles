@@ -43,5 +43,7 @@ Bundle 'junegunn/goyo.vim'
 Bundle 'junegunn/limelight.vim'
 Bundle 'tpope/vim-fugitive'
 Bundle 'edkolev/tmuxline.vim'
+Bundle 'tpope/vim-surround'
+Bundle 'tpope/vim-repeat'
 
 filetype on
