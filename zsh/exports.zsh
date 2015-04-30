@@ -35,6 +35,9 @@ export LPASS_AGENT_TIMEOUT=0
 RBENV_ROOT=/usr/local/var/rbenv
 eval "$(rbenv init -)"
 
+# NVM
+source ~/.nvm/nvm.sh
+
 # direnv hook for auto env setup
 eval "$(direnv hook zsh)"
 
