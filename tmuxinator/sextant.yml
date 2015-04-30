@@ -9,23 +9,24 @@ root: ~/Documents/Work/MojoTech/Sextant/sextant
 # Runs before everything. Use it to start daemons etc.
 # pre: sudo /etc/rc.d/mysqld start
 
-# Runs in each window and pane before window/pane specific commands. Useful for setting up interpreter versions.
-# pre_window: rbenv shell 2.0.0-p247
-
 # Pass command line options to tmux. Useful for specifying a different tmux.conf.
 # tmux_options: -f ~/.tmux.mac.conf
 
 # Change the command to call tmux.  This can be used by derivatives/wrappers like byobu.
 # tmux_command: byobu
 
+# Custom Layout directions
+# https://fabianfranke.de/2013/11/19/use-tmuxinator-to-recreate-tmux-panes-and-windows/
+
+# Runs in each window and pane before window/pane specific commands. Useful for setting up interpreter versions.
+pre_window: nvm use v0.10.38
+
 windows:
   - sextant:
-      layout: 0757,217x85,0,0[217x8,0,0{54x8,0,0,0,53x8,55,0,1,54x8,109,0,2,53x8,164,0,3},217x8,0,9,4,217x45,0,18,5,217x21,0,64,7]
+      layout: cac7,181x85,0,0[181x8,0,0{90x8,0,0,0,45x8,91,0,7,44x8,137,0,8},181x8,0,9,4,181x67,0,18,5]
       panes:
         - cd data_api && make gin
         - cd data_api && goconvey
-        - cd data_api && redis-commander
         - cd data_api && redis-server
         - cd client && grunt serve
         - vim
-        - tig
