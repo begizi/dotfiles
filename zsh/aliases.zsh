@@ -14,6 +14,9 @@ alias c='clear'
 alias g='git'
 alias gs='git status -sb'
 
+# gist
+alias gist='gist -p -c -s'
+
 # vim
 alias v='vim .'
 
