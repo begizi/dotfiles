@@ -27,10 +27,6 @@ export PATH=/Users/begizi/Documents/SDK/adt-bundle-mac-x86_64-20140702/sdk/platf
 # TODO
 export TODO_DB_PATH=$HOME/Dropbox/TODO/todo.json
 
-# lpass
-# set agent timeout to 24 hours
-export LPASS_AGENT_TIMEOUT=0
-
 # RBENV
 RBENV_ROOT=/usr/local/var/rbenv
 eval "$(rbenv init -)"
