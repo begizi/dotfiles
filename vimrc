@@ -26,11 +26,20 @@ set nowrap
 autocmd BufWrite * mark ' | silent! %s/\s\+$// | norm ''
 autocmd BufWrite * let w:winview = winsaveview() | %s/\n\{3,}/\r\r\r/e | if exists('w:winview') | call winrestview(w:winview) | endif
 
+" Save All Binding
+nmap <leader>S :wa<CR>
+
 " Save Binding
 nmap <leader>s :w<CR>
 
+" Quit All Binding
+nmap <leader>Q :qa<CR>
+
 " Quit Binding
 nmap <leader>q :q<CR>
+
+" Write-Quit All Binding
+nmap <leader>W :xa<CR>
 
 " Write-Quit Binding
 nmap <leader>w :wq<CR>
