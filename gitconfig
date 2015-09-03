@@ -1,6 +1,6 @@
 [user]
 	name = Brian Egizi
-	email = brian@mojotech.com
+	email = me@brianegizi.com
 [heroku]
 [color]
   ui = true
@@ -44,3 +44,7 @@
 [core]
 	excludesfile = /Users/begizi/.gitignore
 	editor = vim
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true

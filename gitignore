@@ -10,3 +10,4 @@ tmp/**/*
 !tmp/cache/.keep
 .agignore
 dump.rdb
+.envrc
