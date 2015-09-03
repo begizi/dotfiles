@@ -37,6 +37,9 @@ eval "$(rbenv init -)"
 # NVM
 source ~/.nvm/nvm.sh
 
+# GVM
+[[ -s "$HOME/.gvm/scripts/gvm"  ]] && source "$HOME/.gvm/scripts/gvm"
+
 # direnv hook for auto env setup
 eval "$(direnv hook zsh)"
 
