@@ -147,6 +147,8 @@ let g:syntastic_mode_map = { "mode": "active",
   \ "active_filetypes": [],
   \ "passive_filetypes": ["html"] }
 
+let g:syntastic_javascript_checkers = ['eslint', 'jslint', 'jsxlint']
+
 " Softtabs, 2 spaces
 set tabstop=2
 set shiftwidth=2
