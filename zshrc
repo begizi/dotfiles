@@ -72,4 +72,5 @@ export GREP_COLOR='1;33'
 source ~/.zsh/exports.zsh
 source ~/.zsh/setopts.zsh
 source ~/.zsh/aliases.zsh
+source ~/.zsh/functions.zsh
 
