@@ -11,3 +11,4 @@ tmp/**/*
 .agignore
 dump.rdb
 .envrc
+.tern-port
