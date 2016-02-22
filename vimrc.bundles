@@ -46,5 +46,6 @@ Bundle 'edkolev/tmuxline.vim'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-repeat'
 Bundle 'mxw/vim-jsx'
+Bundle 'pangloss/vim-javascript'
 
 filetype on
