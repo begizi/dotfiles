@@ -74,3 +74,6 @@ source ~/.zsh/setopts.zsh
 source ~/.zsh/aliases.zsh
 source ~/.zsh/functions.zsh
 
+
+# added by travis gem
+[ -f /Users/begizi/.travis/travis.sh ] && source /Users/begizi/.travis/travis.sh
