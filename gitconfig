@@ -48,3 +48,5 @@
 	clean = git-lfs clean %f
 	smudge = git-lfs smudge %f
 	required = true
+[commit]
+	template = /Users/begizi/.git_commit_msg.txt
