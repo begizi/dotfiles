@@ -182,7 +182,7 @@ values."
    ;; If non nil a progress bar is displayed when spacemacs is loading. This
    ;; may increase the boot time on some systems and emacs builds, set it to
    ;; nil to boost the loading time. (default t)
-   dotspacemacs-loading-progress-bar t
+   dotspacemacs-loading-progress-bar nil
    ;; If non nil the frame is fullscreen when Emacs starts up. (default nil)
    ;; (Emacs 24.4+ only)
    dotspacemacs-fullscreen-at-startup nil
@@ -210,7 +210,7 @@ values."
    ;; If non nil line numbers are turned on in all `prog-mode' and `text-mode'
    ;; derivatives. If set to `relative', also turns on relative line numbers.
    ;; (default nil)
-   dotspacemacs-line-numbers nil
+   dotspacemacs-line-numbers t
    ;; If non-nil smartparens-strict-mode will be enabled in programming modes.
    ;; (default nil)
    dotspacemacs-smartparens-strict-mode nil
@@ -234,7 +234,7 @@ values."
    ;; `trailing' to delete only the whitespace at end of lines, `changed'to
    ;; delete only whitespace for changed lines or `nil' to disable cleanup.
    ;; (default nil)
-   dotspacemacs-whitespace-cleanup nil
+   dotspacemacs-whitespace-cleanup 'all
    ))
 
 (global-set-key [S-left] 'windmove-left)
@@ -247,6 +247,7 @@ values."
 It is called immediately after `dotspacemacs/init'.  You are free to put almost
 any user code here.  The exception is org related code, which should be placed
 in `dotspacemacs/user-config'."
+  (setq-default flycheck-disabled-checkers '(javascript-jshint))
   )
 
 (defun dotspacemacs/user-config ()
@@ -255,16 +256,22 @@ This function is called at the very end of Spacemacs initialization after
 layers configuration. You are free to put any user code."
 
   ; global setting overrides
-  (global-linum-mode)
+  (define-key evil-normal-state-map (kbd "C-p") 'helm-projectile-find-file)
+
+  ; custom leader commands
+  (spacemacs/set-leader-keys "d" 'helm-projectile-find-file)
 
   ; define modes for extensions
-  (add-to-list 'auto-mode-alist '("\\.jsx$" . web-mode))
+  ; (add-to-list 'auto-mode-alist '("\\.jsx$" . web-mode))
 
   (evil-define-key 'visual evil-surround-mode-map "s" 'evil-substitute)
   (evil-define-key 'visual evil-surround-mode-map "S" 'evil-surround-region)
   (global-evil-surround-mode 1)
   (setq-default
+   ;; emmet-mode stuff
+   emmet-expand-jsx-className? t
    ;; js2-mode stuff
+   js2-basic-offset 2
    js2-basic-offsets-indent-level 2
    js-indent-level 2
    ;; web-mode stuff
