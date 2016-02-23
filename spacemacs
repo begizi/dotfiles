@@ -272,6 +272,8 @@ layers configuration. You are free to put any user code."
   ; custom leader commands
   (spacemacs/set-leader-keys "d" 'helm-projectile-find-file)
   (spacemacs/set-leader-keys "U" 'eslint-fix-file-and-revert)
+  (spacemacs/set-leader-keys "E" 'revert-buffer)
+  (spacemacs/set-leader-keys "W" 'save-buffer)
 
   (evil-define-key 'visual evil-surround-mode-map "s" 'evil-substitute)
   (evil-define-key 'visual evil-surround-mode-map "S" 'evil-surround-region)
