@@ -242,6 +242,17 @@ values."
 (global-set-key [S-up] 'windmove-up)
 (global-set-key [S-down] 'windmove-down)
 
+; runs eslint --fix on the current file after save
+(defun eslint-fix-file ()
+  (interactive)
+  (message "eslint --fixing the file" (buffer-file-name))
+  (shell-command (concat "eslint --fix " (buffer-file-name))))
+
+(defun eslint-fix-file-and-revert ()
+  (interactive)
+  (eslint-fix-file)
+  (revert-buffer t t))
+
 (defun dotspacemacs/user-init ()
   "Initialization function for user code.
 It is called immediately after `dotspacemacs/init'.  You are free to put almost
@@ -260,9 +271,7 @@ layers configuration. You are free to put any user code."
 
   ; custom leader commands
   (spacemacs/set-leader-keys "d" 'helm-projectile-find-file)
-
-  ; define modes for extensions
-  ; (add-to-list 'auto-mode-alist '("\\.jsx$" . web-mode))
+  (spacemacs/set-leader-keys "U" 'eslint-fix-file-and-revert)
 
   (evil-define-key 'visual evil-surround-mode-map "s" 'evil-substitute)
   (evil-define-key 'visual evil-surround-mode-map "S" 'evil-surround-region)
