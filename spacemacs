@@ -259,6 +259,7 @@ It is called immediately after `dotspacemacs/init'.  You are free to put almost
 any user code here.  The exception is org related code, which should be placed
 in `dotspacemacs/user-config'."
   (setq-default flycheck-disabled-checkers '(javascript-jshint))
+  (add-hook 'react-mode-hook 'emmet-mode)
   )
 
 (defun dotspacemacs/user-config ()
@@ -279,8 +280,6 @@ layers configuration. You are free to put any user code."
   (evil-define-key 'visual evil-surround-mode-map "S" 'evil-surround-region)
   (global-evil-surround-mode 1)
   (setq-default
-   ;; emmet-mode stuff
-   emmet-expand-jsx-className? t
    ;; js2-mode stuff
    js2-basic-offset 2
    js2-basic-offsets-indent-level 2
