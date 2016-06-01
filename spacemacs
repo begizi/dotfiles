@@ -312,9 +312,9 @@ layers configuration. You are free to put any user code."
     :name "CSP: Webpack server"
     :command "npm"
     :args '("start")
-    :env '(("DEV_TOOLS" "true"))
+    :env '(("DEV_TOOLS" "false"))
     :tags '(csp)
-    :cwd "~/Documents/Work/MojoTech/CSP/csp/web")
+    :cwd "~/Documents/Work/MojoTech/CSP/csp")
   (prodigy-define-service
     :name "Standup: Webpack server"
     :command "npm"
