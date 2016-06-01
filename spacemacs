@@ -259,7 +259,13 @@ values."
 It is called immediately after `dotspacemacs/init'.  You are free to put almost
 any user code here.  The exception is org related code, which should be placed
 in `dotspacemacs/user-config'."
-  (setq-default flycheck-disabled-checkers '(javascript-jshint))
+  (setq-default
+   ; whitespace & wrapping
+   truncate-lines t
+
+   ; syntax checker
+   flycheck-disabled-checkers '(javascript-jshint)
+  )
   (add-hook 'react-mode-hook 'emmet-mode)
   )
 
