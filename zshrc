@@ -77,3 +77,5 @@ source ~/.zsh/functions.zsh
 
 # added by travis gem
 [ -f /Users/begizi/.travis/travis.sh ] && source /Users/begizi/.travis/travis.sh
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
