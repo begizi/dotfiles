@@ -24,9 +24,6 @@ export GOPATH=/usr/local/Cellar/go
 # Android
 export PATH=/Users/begizi/Documents/SDK/adt-bundle-mac-x86_64-20140702/sdk/platform-tools:$PATH
 
-# App Engine
-export PATH=/Users/begizi/go_appengine:$PATH
-
 # TODO
 export TODO_DB_PATH=$HOME/Dropbox/TODO/todo.json
 
@@ -45,3 +42,9 @@ eval "$(direnv hook zsh)"
 
 # alias hub to git
 eval "$(hub alias -s)"
+
+# The next line updates PATH for the Google Cloud SDK.
+source '/Users/begizi/Documents/SDK/google-cloud-sdk/path.zsh.inc'
+
+# The next line enables shell command completion for gcloud.
+source '/Users/begizi/Documents/SDK/google-cloud-sdk/completion.zsh.inc'
