@@ -31,9 +31,9 @@ values."
      (shell :variables
             shell-default-height 30
             shell-default-position 'bottom)
-     spell-checking
      syntax-checking
      version-control
+     clojure
      react
      go
      prodigy
@@ -44,6 +44,7 @@ values."
    ;; configuration in `dotspacemacs/user-config'.
    dotspacemacs-additional-packages '(
                                       evil-surround
+                                      stylus-mode
                                       )
    ;; A list of packages and/or extensions that will not be install and loaded.
    dotspacemacs-excluded-packages '()
