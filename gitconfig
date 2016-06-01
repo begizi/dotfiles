@@ -50,3 +50,5 @@
 	required = true
 [commit]
 	template = /Users/begizi/.git_commit_msg.txt
+[credential]
+	helper = osxkeychain
