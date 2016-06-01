@@ -273,6 +273,7 @@ in `dotspacemacs/user-config'."
    flycheck-disabled-checkers '(javascript-jshint)
   )
   (add-hook 'react-mode-hook 'emmet-mode)
+  (add-hook 'react-mode-hook 'js2-mode-hide-warnings-and-errors)
   )
 
 (defun dotspacemacs/user-config ()
