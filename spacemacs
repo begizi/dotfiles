@@ -36,6 +36,8 @@ values."
      clojure
      react
      go
+     ruby
+     ruby-on-rails
      prodigy
      )
    ;; List of additional packages that will be installed without being
