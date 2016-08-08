@@ -21,6 +21,8 @@ bind branch <Backspace> !@?git branch -D %(branch)
 bind branch R !?git rebase %(branch)
 bind branch > !?hub pull-request -b %(branch)
 
+bind main <C-F> !?git commit --fixup=%(commit)
+
 bind stash p !@git stash pop
 bind stash c !git stash pop %(stash)
 

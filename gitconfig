@@ -11,6 +11,7 @@
   rebase = true
 [rebase]
   autostash = true
+	autosquash = true
 [push]
 	default = current
 [alias]
@@ -52,3 +53,5 @@
 	template = /Users/begizi/.git_commit_msg.txt
 [credential]
 	helper = osxkeychain
+[diff]
+	compactionHeuristic = true
