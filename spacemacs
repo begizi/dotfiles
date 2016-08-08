@@ -275,6 +275,7 @@ in `dotspacemacs/user-config'."
    ; syntax checker
    flycheck-disabled-checkers '(javascript-jshint)
   )
+  (setq-default require-final-newline t)
   (add-hook 'react-mode-hook 'emmet-mode)
   (add-hook 'react-mode-hook 'js2-mode-hide-warnings-and-errors)
   )
