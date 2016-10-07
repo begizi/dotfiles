@@ -291,6 +291,8 @@ layers configuration. You are free to put any user code."
   ; prevent esc-key from translating to meta-key in terminal mode
   (setq evil-esc-delay 0)
 
+  (setq linum-format " %4d \u2502")
+
   ; custom leader commands
   (spacemacs/set-leader-keys "d" 'helm-projectile-find-file)
   (spacemacs/set-leader-keys "E" 'revert-buffer)
