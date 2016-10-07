@@ -79,3 +79,6 @@ source ~/.zsh/functions.zsh
 [ -f /Users/begizi/.travis/travis.sh ] && source /Users/begizi/.travis/travis.sh
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+# ESC key sequence timeout
+KEYTIMEOUT=1
