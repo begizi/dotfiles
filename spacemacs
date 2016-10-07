@@ -288,6 +288,9 @@ layers configuration. You are free to put any user code."
   ; global setting overrides
   (define-key evil-normal-state-map (kbd "C-p") 'helm-projectile-find-file)
 
+  ; prevent esc-key from translating to meta-key in terminal mode
+  (setq evil-esc-delay 0)
+
   ; custom leader commands
   (spacemacs/set-leader-keys "d" 'helm-projectile-find-file)
   (spacemacs/set-leader-keys "E" 'revert-buffer)
