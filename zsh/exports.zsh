@@ -5,7 +5,7 @@ export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin:/usr/lo
 export PATH=$HOME/bin/:$PATH
 
 # Editor
-export EDITOR=vim
+export EDITOR=emacs
 
 # Homebrew
 export PATH=/usr/local/Cellar/go/bin/:$PATH
