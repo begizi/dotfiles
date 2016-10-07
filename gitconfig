@@ -55,6 +55,9 @@
 	helper = osxkeychain
 [diff]
 	compactionHeuristic = true
+[branch]
+	autosetuprebase = always
+	autosetupmerge = always
 [rerere]
 	enabled = true
 	autoupdate = true
