@@ -24,6 +24,10 @@ export GOPATH=/usr/local/Cellar/go
 # Android
 export PATH=/Users/begizi/Documents/SDK/adt-bundle-mac-x86_64-20140702/sdk/platform-tools:$PATH
 
+# Java
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-9.jdk/Contents/Home
+export PATH=$JAVA_HOME/bin:$PATH
+
 # TODO
 export TODO_DB_PATH=$HOME/Dropbox/TODO/todo.json
 
