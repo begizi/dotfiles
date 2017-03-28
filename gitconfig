@@ -1,19 +1,20 @@
 [user]
-	name = Brian Egizi
-	email = me@brianegizi.com
+  name = Brian Egizi
+  email = me@brianegizi.com
+  signingkey = 0916C663
 [heroku]
 [color]
   ui = true
 [difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path =
+  cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+  path =
 [pull]
   rebase = true
 [rebase]
   autostash = true
-	autosquash = true
+  autosquash = true
 [push]
-	default = current
+  default = current
 [alias]
   c = checkout
   f = fetch
@@ -41,22 +42,20 @@
 
   delete-merged = !git branch --merged | grep -v "^*" | xargs -n 1 git branch -d
 [heroku]
-	account = personal
+  account = personal
 [core]
-	excludesfile = /Users/begizi/.gitignore
-	editor = vim
+  excludesfile = /Users/begizi/.gitignore
+  editor = vim
 [filter "lfs"]
-	clean = git-lfs clean %f
-	smudge = git-lfs smudge %f
-	required = true
+  clean = git-lfs clean %f
+  smudge = git-lfs smudge %f
+  required = true
 [commit]
-	template = /Users/begizi/.git_commit_msg.txt
+  template = /Users/begizi/.git_commit_msg.txt
+  gpgsign = true
 [credential]
-	helper = osxkeychain
+  helper = osxkeychain
 [diff]
-	compactionHeuristic = true
+  compactionHeuristic = true
 [branch]
-	autosetuprebase = always
-[rerere]
-	enabled = true
-	autoupdate = true
+  autosetuprebase = always
