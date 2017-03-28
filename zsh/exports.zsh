@@ -7,8 +7,14 @@ export PATH=$HOME/bin/:$PATH
 # Editor
 export EDITOR=emacs
 
+# GVM
+[[ -s "$HOME/.gvm/scripts/gvm"  ]] && source "$HOME/.gvm/scripts/gvm"
+
+# GOPATH
+export GOPATH=$HOME/go
+
 # Homebrew
-export PATH=/usr/local/Cellar/go/bin/:$PATH
+export PATH=$GOPATH/bin:$PATH
 export HOMEBREW_LIBRARY_PATH=$HOMEBREW_LIBRARY_PATH:$LD_LIBRARY_PATH
 export LDFLAGS=-L/usr/local/Cellar/readline/6.2.2/lib
 export CPPFLAGS=-I/usr/local/Cellar/readline/6.2.2/include
@@ -17,9 +23,6 @@ export CPPFLAGS=-I/usr/local/Cellar/readline/6.2.2/include
 export RABBITMQ_HOME=/usr/local/Cellar/rabbitmq/2.7.1
 export CPLUS_INCLUDE_PATH=/usr/local/include:$CPLUS_INCLUDE_PATH
 export PYTHONPATH=/usr/local/lib/python2.7/site-packages:/usr/local/lib/python:$PYTHONPATH
-
-# GOPATH
-export GOPATH=/usr/local/Cellar/go
 
 # Android
 export PATH=/Users/begizi/Documents/SDK/adt-bundle-mac-x86_64-20140702/sdk/platform-tools:$PATH
@@ -37,9 +40,6 @@ eval "$(rbenv init -)"
 
 # NVM
 source ~/.nvm/nvm.sh
-
-# GVM
-[[ -s "$HOME/.gvm/scripts/gvm"  ]] && source "$HOME/.gvm/scripts/gvm"
 
 # direnv hook for auto env setup
 eval "$(direnv hook zsh)"
