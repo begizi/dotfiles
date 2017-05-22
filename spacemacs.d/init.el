@@ -427,6 +427,13 @@ you should place your code here."
     :cwd "~/Documents/Work/MojoTech/Countr/countr/client"
     :stop-signal 'sigkill)
   (prodigy-define-service
+    :name "Countr: Storybook"
+    :command "npm"
+    :args '("run" "storybook")
+    :tags '(countr)
+    :cwd "~/Documents/Work/MojoTech/Countr/countr/client"
+    :stop-signal 'sigkill)
+  (prodigy-define-service
     :name "Countr: Docker"
     :command "docker-compose"
     :args '("up")
