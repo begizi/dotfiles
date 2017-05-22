@@ -34,15 +34,9 @@ bind j:ctrl;alt;cmd  throw down  resize
  bind l:cmd;ctrl    focus right
  bind h:cmd;ctrl     focus left
 
-# Window Hints
-bind j:cmd;shift hint
-
 # Window Grid
 bind d:cmd;shift grid padding:5 0:8,8 1:8,8
 bind 1:alt ${full}
 bind 2:alt ${lefthalf}
 bind 3:alt ${righthalf}
 bind tab:cmd switch
-
-# Application Shortcuts
-# bind e:cmd;shift show 'Mailbox (Beta)'
