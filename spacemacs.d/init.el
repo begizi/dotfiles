@@ -311,7 +311,7 @@ before packages are loaded. If you are unsure, you should try in setting them in
   (load-file "~/.spacemacs.d/prettier-js.el")
   (require 'prettier-js)
 
-  (setq prettier-args '("--single-quote"))
+  (setq prettier-args '("--single-quote" "--parser=flow"))
 
   (setq-default
     ; whitespace & wrapping
