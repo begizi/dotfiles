@@ -13,3 +13,4 @@ dump.rdb
 .envrc
 .tern-port
 .dir-locals.el
+.vscode/*
